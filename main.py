@@ -1,9 +1,9 @@
 from typing import Optional
-
 from fastapi import FastAPI
-
 from fastapi.responses import HTMLResponse #インポート
 from fastapi.staticfiles import StaticFiles
+from pydantic import BaseModel
+
 
 from pathlib import Path
 
