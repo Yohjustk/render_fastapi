@@ -40,8 +40,7 @@
     </div>
   </nav>
 
-  <style>
-    .main-visual-0 {
+  <style>   .main-visual-0 {
       background-color: rgba(0, 0, 0, 0.6); 
       padding-top: 3rem;
       padding-bottom: 3rem;
@@ -49,39 +48,34 @@
       https://developer.mozilla.org/ja/docs/Web/CSS/background-color
       https://developer.mozilla.org/ja/docs/Web/CSS/padding
       https://developer.mozilla.org/ja/docs/Learn/CSS/Building_blocks/Values_and_units */
-    }
-    .main-visual-1 {
+    }   .main-visual-1 {
       background-image: url(img/main-visual.jpeg); 
       padding-top: 3rem;
       padding-bottom: 3rem;
       /* 参考URL：
       https://developer.mozilla.org/ja/docs/Web/CSS/background-image */
-    }
-    .main-visual-2 {
+    }   .main-visual-2 {
       background-image: url(img/main-visual.jpeg); 
       background-size: cover;
       padding-top: 3rem;
       padding-bottom: 3rem;
       /* 参考URL：
       https://developer.mozilla.org/ja/docs/Web/CSS/background-size */
-    }
-    .main-visual-3 {
+    }   .main-visual-3 {
       background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/main-visual.jpeg); 
       background-size: cover; 
       padding-top: 3rem;
       padding-bottom: 3rem;
       /* 参考URL：
       https://developer.mozilla.org/ja/docs/Web/CSS/linear-gradient() */
-    }
-    .main-visual-4 {
+    }   .main-visual-4 {
       background: linear-gradient(135deg, rgba(255, 0, 161, .8), rgba(4, 51, 255, .6)), url(img/main-visual.jpeg); 
       background-size: cover; 
       padding-top: 3rem;
       padding-bottom: 3rem;
       /* 参考URL：
       https://developer.mozilla.org/ja/docs/Web/CSS/linear-gradient() */
-    }
-    .main-visual-5 {
+    }   .main-visual-5 {
       background: linear-gradient(25deg, rgba(255, 190, 44, 0.8), rgba(255, 44, 171, 0.8)), url(img/main-visual.jpeg); 
       background-size: cover; 
       clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 50% 100%, 0% 85%);
@@ -94,19 +88,19 @@
       transform: rotate(-10deg);
     }
   </style>
-  <div class="mt-5 text-white main-visual-5">
+  <div class="mt-5 text-ite main-visual-5">
     <div class="container">
-      <h1 class="display-3">Main Visual</h1>
+      <h1 class="displ-3">Main Visual</h1>
       <p>ページ上部に配置された大きな画像は観賞者に強い印象を与えます。この領域に配置された画像を、メインビジュアル、キービジュアル、ヒーローイメージなどと呼びます。Bootstrapではcontainerやp-5といったclass属性で確保される領域に画像を挿入することでメインビジュアルを表示できます。</p>      
       <a class="btn btn-outline-light btn-lg" href="https://www.google.com/" role="button">詳しくみる &raquo;</a>
     </div>
   </div>
 
   <style>
-  img-clipping-1 {
+    .img-clipping-1 {
       clip-path: circle(42%);
     }
-  img-clipping-2 {
+    .img-clipping-2 {
       border-radius: 0px;
       clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 55% 90%, 50% 100%, 45% 90%, 0% 90%);
       /* 参考URL：
@@ -118,7 +112,7 @@
     <div class="row">
       <div class="col-xs-12 col-sm-6 col-md-4"">
         <div class="card mb-5 border-0 text-center">
-        img class="carimg-toimg-clipping-1" src="img/seaside.jpeg" alt="Card image cap">
+          <img class="card-img-top img-clipping-1" src="./img/seaside.jpeg" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title text-primary">Card Component</h5>
             <p class="card-text">Webデザインでは同種のコンテンツを複数並べて配置することが多いため、Bootstrapでは矩形領域を反復配置するためにcardというclass属性が定義されています。</p>
@@ -128,7 +122,7 @@
       </div>
       <div class="col-xs-12 col-sm-6 col-md-4"">
         <div class="card mb-5 border-0 text-center">
-        img class="carimg-toimg-clipping-1" src="img/food.jpeg" alt="Card image cap">
+          <img class="card-img-top img-clipping-1" src="./img/food.jpeg" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title text-primary">Card Component</h5>
             <p class="card-text">Webデザインでは同種のコンテンツを複数並べて配置することが多いため、Bootstrapでは矩形領域を反復配置するためにcardというclass属性が定義されています。</p>
@@ -138,7 +132,7 @@
       </div>
       <div class="col-xs-12 col-sm-6 col-md-4">
         <div class="card mb-5 border-0 text-center">
-        img class="carimg-toimg-clipping-1" src="img/coffee.jpeg" alt="Card image cap">
+          <img class="card-img-top img-clipping-1" src="./img/coffee.jpeg" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title text-primary">Card Component</h5>
             <p class="card-text">Webデザインでは同種のコンテンツを複数並べて配置することが多いため、Bootstrapでは矩形領域を反復配置するためにcardというclass属性が定義されています。</p>
@@ -148,7 +142,7 @@
       </div>
       <!-- <div class="col-xs-12 col-sm-6 col-md-4">
         <div class="card mb-5 border-0 text-center">
-        img class="carimg-toimg-clipping-1" src="img/room.jpeg" alt="Card image cap">
+          <img class="card-img-top img-clipping-1" src="./img/room.jpeg" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title text-primary">Card Component</h5>
             <p class="card-text">Webデザインでは同種のコンテンツを複数並べて配置することが多いため、Bootstrapでは矩形領域を反復配置するためにcardというclass属性が定義されています。</p>
