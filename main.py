@@ -4,6 +4,8 @@ from fastapi import FastAPI
 
 from fastapi.responses import HTMLResponse #インポート
 
+from pathlib import Path
+
 
 import random  # randomライブラリを追加
 
