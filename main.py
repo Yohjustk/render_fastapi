@@ -3,6 +3,7 @@ from typing import Optional
 from fastapi import FastAPI
 
 from fastapi.responses import HTMLResponse #インポート
+from fastapi.staticfiles import StaticFiles
 
 from pathlib import Path
 
@@ -11,7 +12,8 @@ import random  # randomライブラリを追加
 
 
 app = FastAPI()
-
+# 静的ファイルのマウント
+app.mount("/static", StaticFiles(directory="static"), name="static")
 
 @app.get("/")
 async def root():
@@ -51,7 +53,7 @@ def index():
     # </html>
     # """
     # return HTMLResponse(content=html_content, status_code=200)
-    html_path = Path("index.html")  # 同じディレクトリにあるHTMLファイル
+    html_path = Path("index.html")
     if not html_path.exists():
         return HTMLResponse(content="<h1>File not found</h1>", status_code=404)
     html_content = html_path.read_text(encoding='utf-8')
