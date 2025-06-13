@@ -38,15 +38,20 @@ def omikuji():
 
 @app.get("/index")
 def index():
-    html_content = """
-    <html>
-        <head>
-            <title>Some HTML in here</title>
-        </head>
-        <body>
-            <h1>Look ma! HTML!</h1>
-        </body>
-    </html>
-    """
+    # html_content = """
+    # <html>
+    #     <head>
+    #         <title>Some HTML in here</title>
+    #     </head>
+    #     <body>
+    #         <h1>Look ma! HTML!</h1>
+    #     </body>
+    # </html>
+    # """
+    # return HTMLResponse(content=html_content, status_code=200)
+    html_path = Path("index.html")  # 同じディレクトリにあるHTMLファイル
+    if not html_path.exists():
+        return HTMLResponse(content="<h1>File not found</h1>", status_code=404)
+    html_content = html_path.read_text(encoding='utf-8')
     return HTMLResponse(content=html_content, status_code=200)
 
