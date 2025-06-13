@@ -59,3 +59,11 @@ def index():
     html_content = html_path.read_text(encoding='utf-8')
     return HTMLResponse(content=html_content, status_code=200)
 
+# リクエストボディのデータ形式を定義
+class Fruit(BaseModel):
+    name: str
+
+# POSTメソッド
+@app.post("/favorite-fruit")
+async def favorite_fruit(fruit: Fruit):
+    return {"message": f"あなたの好きな果物は {fruit.name} ですね！美味しそう！"}
